@@ -1,5 +1,5 @@
 #  **Task 1:**
-## **Write a blog on the difference between HTTP 1.1 and HTTP 2**
+## **1. Write a blog on the difference between HTTP 1.1 and HTTP 2**
 
 ### **Table of Content**
 ________________________________________________________________________________________
@@ -39,13 +39,13 @@ ________________________________________________________________________________
 ### **Why is HTTP 2 faster than HTTP 1.1**
 _______________________________________________________________________________________
 
-HTTP 2 is faster than HTTP 1.1 because it uses a more advanced compression method to eliminate redundant information in HTTP header packets. This method, called HPACK, eliminates a few bytes from every HTTP packet. Because a single webpage involves many HTTP packets, those bytes add up quickly , resulting in faster loading. HTTP 2 also streamlines communication between the browser and server. It eliminates redundant headers and compresses the remaining headers to drastically decrease the amount of date repeated during a session
+HTTP 2 is faster than HTTP 1.1 because it uses a more advanced compression method to eliminate redundant information in HTTP header packets. This method, called HPACK, eliminates a few bytes from every HTTP packet. Because a single webpage involves many HTTP packets, those bytes add up quickly, resulting in faster loading. HTTP 2 also streamlines communication between the browser and the server. It eliminates redundant headers and compresses the remaining headers to drastically decrease the amount of data repeated during a session
 ### **What is Prioritization?:**
 _______________________________________________________________________________________
 
-Prioritization refers to the order in which pieces of content are loaded. Suppose a user visits a news website and navigates to an article. Should thhe photo at the top of the article load first or Should the text of the article load first? or Should the banner ads load first?
-Prioritization affects a webpage's load time. For example, certain resources, like JavaScript files, may b;=lock the rest of the page from loading if they have to load first. More of the page can load at once if these render-blocking resources load last. In addition, the order in which these page resources load affects how the user preceives page load time. If only behind-the-scenes content (like CSS file) or content the user can't see immediately (like banner ads at the bottom of the page) loads first, the user will think the page is not loading at all. If the content that's most important to the user loads first such as the image at the top of the page, then the user will perceive the page as loading faster.
-HTTP 2 offers a feature called **_Weighted Prioritization._** This allows developers to decide which page resources will load first, every time. In HTTP 2, when a clent makes a request for a webpage, the server sends several streams of data to the client at once, instead of sending one thing after another. This method of data delivery is known as **_Multiplexing._** Developers can assign each of these data streams a different weighted value, and the value tells the client which data stream to render first.
+Prioritization refers to the order in which pieces of content are loaded. Suppose a user visits a news website and navigates to an article. Should the photo at the top of the article load first or Should the text of the article load first? Or should the banner ads load first?
+Prioritization affects a webpage's load time. For example, certain resources, like JavaScript files, may b;=lock the rest of the page from loading if they have to load first. More of the page can load at once if these render-blocking resources load last. In addition, the order in which these page resources load affects how the user perceives page load time. If only behind-the-scenes content (like CSS files) or content the user can't see immediately (like banner ads at the bottom of the page) loads first, the user will think the page is not loading at all. If the content that's most important to the user loads first such as the image at the top of the page, then the user will perceive the page as loading faster.
+HTTP 2 offers a feature called **_Weighted Prioritization._** This allows developers to decide which page resources will load first, every time. In HTTP 2, when a client makes a request for a webpage, the server sends several streams of data to the client at once, instead of sending one thing after another. This method of data delivery is known as **_Multiplexing._** Developers can assign each of these data streams a different weighted value, and the value tells the client which data stream to render first.
 ### **Conclusion:**
 _______________________________________________________________________________________
 
