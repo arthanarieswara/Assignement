@@ -1,5 +1,5 @@
 const obj1 = { name: 'Arthana', age: 30 };
-const obj2 = { name: 'Person1', age: 30 };
+const obj2 = { name: 'Arthana', age: 30 };
 
 const keys1 = Object.keys(obj1);
 const keys2 = Object.keys(obj2);
