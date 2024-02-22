@@ -7,9 +7,8 @@ const isOdd = function(arr) {
   }
 };
 
-let in = [1,2,3,4,5,5,6,7,7] 
-const odd = isOdd(in)
-console.log(odd)
+let saw = [1,2,3,4,5,5,6,7,7] 
+const odd = isOdd(saw)
 
 // anonymous function to convert all the strings to title caps in a string array
 
@@ -86,7 +85,6 @@ const Palindromes = function(arr) {
   return palindromes;
 };
 
-// Example usage:
 const str = ["level", "hello", "radar", "world", "civic", "racecar"];
 console.log(Palindromes(str));
 
@@ -131,7 +129,21 @@ const removeDuplicates = function(arr) {
   return uniqueArray;
 };
 
-// Example usage:
 const inArray = [1, 2, 2, 3, 4, 4, 5];
 console.log(removeDuplicates(inArray));
+
+const rotateArray = function(arr, k) {
+  const n = arr.length;
+  
+  for (let i = 0; i < k; i++) {
+      const temp = arr.pop();
+      arr.unshift(temp);
+  }
+
+  return arr;
+};
+
+const rotArray = [1, 2, 3, 4, 5];
+const rotations = 3;
+console.log(rotateArray(rotArray, rotations));
 
