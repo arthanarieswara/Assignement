@@ -30,3 +30,18 @@
 // }
 // console.log(sumofnthnumber(6));
 
+
+
+class Ship {
+    constructor(shipType, radarRange, sonarRange, speedInKnots, fuelType) {
+      this.shipType = shipType;
+      this.radarRange = radarRange;
+      this.sonarRange = sonarRange;
+      this.speedInKnots = speedInKnots;
+      this.fuelType = fuelType;
+    }
+  }
+  
+  const myShip = new Ship("Frigate", 100, 50, 25, "Nuclear");
+  console.log(myShip);
+  
