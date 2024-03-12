@@ -63,7 +63,7 @@ label{
     box-shadow: none;
   }
   table,th,tbody,h1,p{
-    color: white;
+    color: rgb(6, 6, 6);
     font-family: 'Orbitron';
   }
 
@@ -82,5 +82,20 @@ label{
   .display-4{
     font-family: 'Orbitron';
     font-size: 30px;
+    color: rgb(10, 10, 10);
+  }
+
+  #tbody{
+    font-family: 'Orbitron';
+    color: rgb(10, 10, 10);
+  }
+
+  .tr{
+    font-family: 'Orbitron';
+    color: rgb(10, 10, 10);
+  }
+
+  .col m-4{
+    font-family: 'Orbitron';
     color: rgb(10, 10, 10);
   }
