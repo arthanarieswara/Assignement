@@ -76,3 +76,9 @@ button {
     border: 1px solid #000000;
     width : 180px;
 }
+
+.same{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
