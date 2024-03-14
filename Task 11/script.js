@@ -27,7 +27,6 @@ async function api(){
           
   
            <button class="btn btn-primary" target="_blank" value="${element.name.common}" id="demo">Click for Weather</button>
-           <button class="btm btn-primary" id="hideButton">Hide info</button>
            
         
             </div>
@@ -61,14 +60,6 @@ async function api(){
             weather();
           })
         })
-                    // Add onclick function to hide weather information
-                    let hideBtn = document.querySelectorAll("#hideButton");
-                    hideBtn.forEach((ele) => {
-                        ele.addEventListener("click", () => {
-                            let parentCard = ele.parentElement.parentElement.parentElement;
-                            parentCard.style.display = "none";
-                        });
-                    });
        });
        
       }
