@@ -3,16 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <div>
-            
+        <h1>Dice Game</h1>
+        <div class="players">
+            <div class="player" id="player1">
+                <h2>Player 1</h2>
+                <p>Score: <span id="score1">0</span></p>
+                <button onclick="rollDice(1)" id="rollBtn1">Roll Dice</button>
+            </div>
+            <div class="player" id="player2">
+                <h2>Player 2</h2>
+                <p>Score: <span id="score2">0</span></p>
+                <button onclick="rollDice(2)" id="rollBtn2" disabled>Roll Dice</button>
+            </div>
         </div>
-
+        <button onclick="resetGame()" id="resetBtn" disabled>Reset Game</button>
     </div>
-    <script type="text/javascript" src=./demo.js></script>
+
+    <script src="demo.js"></script>
 </body>
 </html>
