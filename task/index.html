@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Character Count</title>
+</head>
+<body>
+
+<textarea id="textArea" placeholder="Type something..."></textarea>
+
+<script>
+    // Get the textarea element
+    const textArea = document.getElementById('textArea');
+
+    // Add event listener for input event on textarea
+    textArea.addEventListener('input', function() {
+        // Get the current value of textarea
+        const text = textArea.value;
+        // Get the length of the text
+        const length = text.length;
+        // Print character count in console
+        console.log('Character count:', length);
+    });
+</script>
+
+<input type="number" id="decimalInput" placeholder="Enter a decimal number">
+<button id="convertButton">Convert</button>
+
+<script>
+    // Get the input field and the convert button
+    const decimalInput = document.getElementById('decimalInput');
+    const convertButton = document.getElementById('convertButton');
+
+    // Add event listener for click event on convert button
+    convertButton.addEventListener('click', function() {
+        // Get the decimal input value
+        const decimalValue = parseInt(decimalInput.value);
+        if (!isNaN(decimalValue)) {
+            // Convert decimal to binary
+            const binaryValue = decimalValue.toString(2);
+            // Convert decimal to hexadecimal
+            const hexadecimalValue = decimalValue.toString(16).toUpperCase();
+
+            // Print the results in the console
+            console.log('Decimal:', decimalValue);
+            console.log('Binary:', binaryValue);
+            console.log('Hexadecimal:', hexadecimalValue);
+        } else {
+            console.log('Please enter a valid decimal number.');
+        }
+    });
+</script>
+
+</body>
+</html>

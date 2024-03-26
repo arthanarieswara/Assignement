@@ -1,0 +1,41 @@
+.container {
+    background-color: rgb(255, 255, 255);
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+.row{
+    text-align: center;
+    .title{
+        color : green;
+    }
+    .game-panel{
+        width:100%;
+        display: flex;  
+        justify-content: space-evenly;
+    }
+    .reset-btn{
+        background-color: rgb(242, 0,0);
+        background: none;
+        border: none;
+        /* font-size: xx-large; */
+        border-radius: 10px;
+        padding: 5px 2vw;    
+        text-transform: uppercase;
+        color: black;
+        cursor: pointer;
+    }
+    .player{
+        display: flex;
+        flex-flow: column nowrap;
+        height: 250px;
+    }
+    .dice{
+        height: 250px;
+    }
+    .score{
+        font-size: xx-large;
+        font-weight: auto   ;
+    }
+
+}
