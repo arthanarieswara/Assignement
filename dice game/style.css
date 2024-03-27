@@ -18,7 +18,6 @@
         background-color: rgb(234, 126, 126);
         border-radius: 10px;
         padding: 5px 2vw;    
-        text-transform: uppercase;
         color: black;
         cursor: pointer;
     }
@@ -38,10 +37,31 @@
         background-color: rgb(95, 228, 82);
         border-radius: 10px;
         padding: 5px 2vw;    
-        text-transform: uppercase;
         color: black;
         cursor: pointer;
 
+    }
+    .roll-btn:disabled{
+        background-color: rgb(244, 161, 161);
+    }
+
+    .roll-btn:enabled{
+        text-transform: uppercase;
+    }
+
+    .reset-btn:enabled{
+        background-color: rgb(95, 228, 82);
+        text-transform: uppercase;
+    }
+
+    .player-info{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    }
+
+    .player-name{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-transform: uppercase;
     }
 
 }
@@ -52,4 +72,11 @@
     margin: 20px;
     padding : 10px;
     font-size: x-large;
+}
+
+@media only screen and (max-width: 768px) {
+    /* CSS for tablet and mobile devices */
+    .container {
+        padding: 10px;
+    }
 }

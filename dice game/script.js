@@ -96,3 +96,4 @@ restButton.addEventListener('click', () => {
 window.onload = () => {
     startGame()
 }
+ 
