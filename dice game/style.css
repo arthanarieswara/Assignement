@@ -15,10 +15,7 @@
         justify-content: space-evenly;
     }
     .reset-btn{
-        background-color: rgb(242, 0,0);
-        background: none;
-        border: none;
-        /* font-size: xx-large; */
+        background-color: rgb(234, 126, 126);
         border-radius: 10px;
         padding: 5px 2vw;    
         text-transform: uppercase;
@@ -37,5 +34,24 @@
         font-size: xx-large;
         font-weight: auto   ;
     }
+    .roll-btn{
+        background-color: rgb(95, 228, 82);
+        border-radius: 10px;
+        padding: 5px 2vw;    
+        text-transform: uppercase;
+        color: black;
+        cursor: pointer;
 
+    }
+
+}
+.content{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    margin: 20px;
+    padding : 10px;
+    /* border: 2px double #000000;
+    border-radius: 10px; */
+    font-size: x-large;
 }

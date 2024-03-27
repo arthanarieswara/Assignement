@@ -13,7 +13,10 @@
         </div>
         <div class="row">
             <div class="player-info">
-                <h3>Player 1 To play</h3>
+                <h3> player
+                <spam class="player-num"id="player-num">1</spam>
+                turn
+                </h3>
             </div>
         </div>
         <div class="row">
@@ -21,24 +24,27 @@
                 <div class="player">
                     <h2>player 1</h2>
                     <spam class="score"id="player-1-score">0</spam>
-                    <input class="roll-btn disabled" id="player-1-btn" type="button" value="Roll Now" disabled/>
+                    <input class="roll-btn" id="player-1-btn" type="button" value="Roll Now" disabled/>
                 </div>
                 <div class="dice">
-                    <img src="image/dice-1.png" alt="">
+                    <img  id = "dice-img" src="image/dice-1.png" alt />
                 </div>
                 <div class="player">
                     <h2>player 2</h2>
                     <spam class="score"id="player-2-score">0</spam>
-                    <input class="roll-btn disabled" id="player-2-btn" type="button" value="Roll Now" disabled/>
+                    <input class="roll-btn" id="player-2-btn" type="button" value="Roll Now" disabled/>
                 </div>
             </div>
+            <div>
+                <span id="content" class="content"></span>
+            </div>
             <div class="row">
-                <input class="reset-Btn" id="Reset" type="button" value="Reset" disabled/>
-                
+                <input class="reset-btn" id="Reset" type="button" value="Reset" disabled/>
             </div>
         </div>
 
 
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
