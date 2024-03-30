@@ -19,7 +19,6 @@
         border-radius: 10px;
         padding: 5px 2vw;    
         color: black;
-        cursor: pointer;
     }
     .player{
         display: flex;
@@ -52,6 +51,7 @@
     .reset-btn:enabled{
         background-color: rgb(95, 228, 82);
         text-transform: uppercase;
+        cursor: pointer;
     }
 
     .player-info{
